@@ -10,6 +10,13 @@ A small, live example repository used in our team workshop on how we handle pull
 - **Review etiquette:** reviews are left as comments, approvals, or change requests, with inline notes attached to specific lines.
 - **Keeping the branch current:** the default branch moves on while a PR is open, so the PR branch is synced with `main` before the review finishes.
 
+## Layout
+
+| Path | Purpose |
+| --- | --- |
+| `README.md` | This document: what the repository is and how we use it. |
+| `.github/workflows/ci.yml` | The CI pipeline that runs on pushes and pull requests and uploads the `build-output` artifact. |
+
 ## Usage
 
 - Create a feature branch such as `feature/usage-notes` for every change.
@@ -17,14 +24,3 @@ A small, live example repository used in our team workshop on how we handle pull
 - Wait for the `CI` workflow to finish and check that the `build-output` artifact was uploaded.
 - Keep the branch up to date by updating it from `main` whenever the default branch moves ahead.
 - Merge only after the checks pass and the review is complete.
-
-## Support
-
-Questions or feedback about this workshop example? Open an issue or leave a comment on the relevant pull request.
-
-## Layout
-
-| Path | Purpose |
-| --- | --- |
-| `README.md` | This document: what the repository is and how we use it. |
-| `.github/workflows/ci.yml` | The CI pipeline that runs on pushes and pull requests and uploads the `build-output` artifact. |
