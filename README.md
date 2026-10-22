@@ -20,3 +20,11 @@ Questions or feedback about this workshop example? Open an issue or leave a comm
 | --- | --- |
 | `README.md` | This document: what the repository is and how we use it. |
 | `.github/workflows/ci.yml` | The CI pipeline that runs on pushes and pull requests and uploads the `build-output` artifact. |
+
+## Usage
+
+- Create a feature branch such as `feature/usage-notes` for every change.
+- Open a **draft** pull request as soon as the work starts, and mark it ready for review once it is finished.
+- Wait for the `CI` workflow to finish and check that the `build-output` artifact was uploaded.
+- Keep the branch up to date by updating it from `main` whenever the default branch moves ahead.
+- Merge only after the checks pass and the review is complete.
