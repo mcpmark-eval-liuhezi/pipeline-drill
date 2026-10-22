@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    name: Build and upload output
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Write the build output file
+        run: |
+          mkdir -p output
+          echo "pipeline-drill: build succeeded" > output/build-output.txt
+          echo "built at: $(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> output/build-output.txt
+
+      - name: Upload build output as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: output/build-output.txt

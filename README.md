@@ -1,2 +1,18 @@
 # pipeline-drill
-Workshop drill: feature branch, draft PR, CI artifact, review etiquette, and keeping the PR branch current
+
+A small, live example repository used in our team workshop on how we handle pull requests on GitHub.
+
+## What this repo demonstrates
+
+- **Feature branches:** small, focused changes developed on a branch (for example `feature/usage-notes`) instead of directly on `main`.
+- **Draft pull requests:** open the PR early as a draft while the work is in progress, then mark it ready for review when it is done.
+- **Continuous integration:** every push and every pull request runs a GitHub Actions workflow (`.github/workflows/ci.yml`) that builds a small artifact named `build-output`.
+- **Review etiquette:** reviews are left as comments, approvals, or change requests, with inline notes attached to specific lines.
+- **Keeping the branch current:** the default branch moves on while a PR is open, so the PR branch is synced with `main` before the review finishes.
+
+## Layout
+
+| Path | Purpose |
+| --- | --- |
+| `README.md` | This document: what the repository is and how we use it. |
+| `.github/workflows/ci.yml` | The CI pipeline that runs on pushes and pull requests and uploads the `build-output` artifact. |
