@@ -18,6 +18,10 @@ A small, live example repository used in our team workshop on how we handle pull
 - Keep the branch up to date by updating it from `main` whenever the default branch moves ahead.
 - Merge only after the checks pass and the review is complete.
 
+## Support
+
+Questions or feedback about this workshop example? Open an issue or leave a comment on the relevant pull request.
+
 ## Layout
 
 | Path | Purpose |
