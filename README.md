@@ -10,6 +10,10 @@ A small, live example repository used in our team workshop on how we handle pull
 - **Review etiquette:** reviews are left as comments, approvals, or change requests, with inline notes attached to specific lines.
 - **Keeping the branch current:** the default branch moves on while a PR is open, so the PR branch is synced with `main` before the review finishes.
 
+## Support
+
+Questions or feedback about this workshop example? Open an issue or leave a comment on the relevant pull request.
+
 ## Layout
 
 | Path | Purpose |
